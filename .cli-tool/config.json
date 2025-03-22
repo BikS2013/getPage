@@ -1,0 +1,26 @@
+{
+  "profiles": {
+    "llm": {
+      "gpt4-test": {
+        "name": "gpt4-test",
+        "provider": "openai",
+        "model": "gpt-4",
+        "api_key": "test-key",
+        "temperature": 0.7,
+        "deployment": null,
+        "base_url": "https://api.openai.com",
+        "api_version": "v1"
+      }
+    },
+    "database": {}
+  },
+  "defaults": {
+    "llm": "gpt4-test",
+    "database": null
+  },
+  "settings": {
+    "output_format": "json",
+    "color_theme": "dark",
+    "log_level": "info"
+  }
+}
