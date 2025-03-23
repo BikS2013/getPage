@@ -20,6 +20,25 @@
         "deployment": null,
         "base_url": "https://api.anthropic.com",
         "api_version": "v1"
+      },
+      "mitsos": {
+        "name": "mitsos",
+        "provider": "giorgos",
+        "model": "to kalitero",
+        "deployment": null,
+        "base_url": "",
+        "api_version": "v1",
+        "temperature": 0.7
+      },
+      "mitsos2": {
+        "name": "mitsos2",
+        "provider": "giorgos",
+        "model": "to 2o kalitero",
+        "scope": "local",
+        "deployment": null,
+        "base_url": "",
+        "api_version": "v1",
+        "temperature": 0.7
       }
     },
     "database": {}
