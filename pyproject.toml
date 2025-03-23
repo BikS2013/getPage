@@ -1,5 +1,5 @@
 [project]
-name = "cli-base"
+name = "getPage"
 version = "0.1.0"
 description = "Universal CLI template with standardized commands, profiles, and configuration management"
 readme = "README.md"
@@ -12,4 +12,4 @@ dependencies = [
 ]
 
 [project.scripts]
-cli-tool = "cli_base.main:cli"
+getPage = "getPage.main:cli"

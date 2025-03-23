@@ -29,9 +29,9 @@ class ConfigManager:
     }
 
     def __init__(self):
-        self.global_config_dir = Path.home() / ".cli-tool"
+        self.global_config_dir = Path.home() / ".getPage"
         self.global_config_path = self.global_config_dir / "config.json"
-        self.local_config_dir = Path.cwd() / ".cli-tool"
+        self.local_config_dir = Path.cwd() / ".getPage"
         self.local_config_path = self.local_config_dir / "config.json"
         
         # Initialize default configuration files if they don't exist

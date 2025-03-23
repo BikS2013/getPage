@@ -1,4 +1,4 @@
-# cli_base/utils/command_registry.py
+# getPage/utils/command_registry.py
 import click
 from typing import Dict, List, Optional, Any, Callable, Set, Union
 import inspect

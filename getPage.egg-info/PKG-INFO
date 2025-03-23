@@ -1,3 +1,14 @@
+Metadata-Version: 2.4
+Name: getPage
+Version: 0.1.0
+Summary: Universal CLI template with standardized commands, profiles, and configuration management
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: click>=8.1.7
+Requires-Dist: rich>=13.7.0
+Requires-Dist: pyyaml>=6.0.1
+
 # getPage CLI Tool
 
 A comprehensive command-line interface template that provides standardized support for commands, subcommands, complex configurations, profiles management, and multi-level configuration files.

@@ -1,14 +1,14 @@
 import json
 from typing import Any, List, Optional
 
-from cli_base.commands.profile_parameter_processor import (
+from getPage.commands.profile_parameter_processor import (
     CreateProfileParameterProcessor,
     EditProfileParameterProcessor, 
     ProfileParameterProcessor
 )
-from cli_base.utils.context import _initialize_context
-from cli_base.utils.formatting import OutputFormatter
-from cli_base.utils.profiles import ProfileManager
+from getPage.utils.context import _initialize_context
+from getPage.utils.formatting import OutputFormatter
+from getPage.utils.profiles import ProfileManager
 
 def extract_scope_params(**kwargs) -> tuple[str,dict[str,Any]]:
     """Extract scope parameters from keyword arguments."""

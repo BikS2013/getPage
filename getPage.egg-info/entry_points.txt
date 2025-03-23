@@ -1,0 +1,2 @@
+[console_scripts]
+getPage = getPage.main:cli

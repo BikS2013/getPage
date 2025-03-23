@@ -1,8 +1,8 @@
 # cli_base/extensibility/llm.py
 from typing import Any, Dict
 
-from cli_base.utils.profiles import BaseProfileManager, ProfileValidationResult
-from cli_base.extensibility.generator import ProfileCommandGenerator
+from getPage.utils.profiles import BaseProfileManager, ProfileValidationResult
+from getPage.extensibility.generator import ProfileCommandGenerator
 
 # Define profile parameters
 PROFILE_PARAMS = [

@@ -167,7 +167,7 @@ class OutputFormatter:
     @staticmethod
     def print_command_tree(commands: Dict[str, Any]) -> None:
         """Print a formatted command tree structure with vibrant colors."""
-        tree = Tree(f"[command]cli-tool[/command]", guide_style="blue")
+        tree = Tree(f"[command]getPage[/command]", guide_style="blue")
         
         # Commands section
         cmd_section = tree.add(f"[section]COMMANDS[/section]")

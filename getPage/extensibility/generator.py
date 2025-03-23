@@ -2,13 +2,13 @@
 import click
 from typing import Callable, Dict, List, Optional, Any, Type
 
-from cli_base.commands.cmd_options import (
+from getPage.commands.cmd_options import (
     json_format_option, json_input_argument, profile_name_option, 
     table_format_option, scope_options
 )
-from cli_base.utils.command_registry import CommandRegistry
-from cli_base.utils.profiles import ProfileManager
-from cli_base.commands.generic_profile_cmd import (
+from getPage.utils.command_registry import CommandRegistry
+from getPage.utils.profiles import ProfileManager
+from getPage.commands.generic_profile_cmd import (
     create_profile, list_profiles, show_profile,
     edit_profile, delete_profile, use_profile
 )

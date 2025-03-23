@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-Universal CLI template with standardized commands, profiles, and configuration management.
+getPage CLI tool with standardized commands, profiles, and configuration management.
 """
 
 import click
-from cli_base.commands.config_cmd import config_group
-from cli_base.extensibility.llm_extension import llm_group
-from cli_base.commands.schema_cmd import schema_group
-from cli_base.utils.context import ContextManager
-from cli_base.utils.formatting import OutputFormatter
+from getPage.commands.config_cmd import config_group
+from getPage.extensibility.llm_extension import llm_group
+from getPage.commands.schema_cmd import schema_group
+from getPage.utils.context import ContextManager
+from getPage.utils.formatting import OutputFormatter
 
 
 @click.group()
@@ -17,7 +17,7 @@ from cli_base.utils.formatting import OutputFormatter
 @click.option("--quiet", "-q", is_flag=True, help="Suppress non-essential output")
 def cli(verbose: bool, quiet: bool):
     """
-    Universal CLI template with standardized commands, profiles, and configuration management.
+    getPage CLI tool with standardized commands, profiles, and configuration management.
     
     Use commands like 'config', 'llm', and 'schema' to interact with the tool.
     """
@@ -42,7 +42,7 @@ cli.add_command(schema_group)
 # Add other profile command groups here
 
 # Now register all commands in the CommandRegistry
-from cli_base.utils.command_registry import CommandRegistry
+from getPage.utils.command_registry import CommandRegistry
 registry = CommandRegistry.get_instance()
 registry.register_commands_from_cli(cli)
 
@@ -55,7 +55,7 @@ def help_command(command, subcommand):
     ctx = click.get_current_context()
     
     # Get command registry
-    from cli_base.utils.command_registry import CommandRegistry
+    from getPage.utils.command_registry import CommandRegistry
     registry = CommandRegistry.get_instance()
     
     if command:
